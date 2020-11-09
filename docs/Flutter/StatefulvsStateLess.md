@@ -11,34 +11,29 @@ The widget which contains the code for a single screen of the app can be just 2 
 - Stateless
 
 
-#h3 Stateless
+### Stateless
 
 If you want to redraw the Stateless Widget, then you will need to create a new instance of the widget.
 
 
-#h3 Stateful
+### Stateful
 Stateful widgets have a mutable state, i.e., they are mutable and can be drawn multiple times within its lifetime.
 
+```dart
+import 'package:flutter/material.dart';
 
+class StartScreen extends StatefulWidget {
+    @override
+    _StartScreenState createState() -> _StartScreenState();
+}
 
-<div class="code-example" markdown="1">
-Default label
-{: .label }
-
-Blue label
-{: .label .label-blue }
-
-Stable
-{: .label .label-green }
-
-New release
-{: .label .label-purple }
-
-Coming soon
-{: .label .label-yellow }
-
-Deprecated
-{: .label .label-red }
-</div>
-
+class _StartScreenState extends State<StartScreen> {
+    @override
+    Widget build(BuildContext context) {
+        return Container(
+            // Here you can design the UI of this stateful screen
+        );
+    }
+}
+```
 
