@@ -37,3 +37,5 @@ class _StartScreenState extends State<StartScreen> {
 }
 ```
 
+<small>[https://medium.com/flutter-community/flutter-stateful-vs-stateless-db325309deae](https://medium.com/flutter-community/flutter-stateful-vs-stateless-db325309deae)</small>
+
