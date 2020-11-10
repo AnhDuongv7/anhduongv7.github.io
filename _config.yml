@@ -27,6 +27,8 @@ github_username:  AnhDuongv7
 # Build settings
 markdown: kramdown
 remote_theme: pmarsceill/just-the-docs
+# Color scheme supports "light" (default) and "dark"
+color_scheme: dark
 plugins:
   - jekyll-feed
 
