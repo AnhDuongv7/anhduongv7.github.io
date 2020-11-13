@@ -3,7 +3,7 @@ layout: default
 title: CodingStyle
 parent: Basic
 grand_parent: Flutter
-nav_order: 100
+nav_order: 2
 ---
 
 | UpperCamelCase        | lowercase_with_underscores | lowerCamelCase |
