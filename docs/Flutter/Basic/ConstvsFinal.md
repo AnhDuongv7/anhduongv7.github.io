@@ -35,6 +35,43 @@ const String name = 'Ahihihi';
 name = "Jack"; /// Will throw error as well
 ```
 
+Usage `const`
+It is used to increase Flutter performance as it helps Flutter to rebuild only widgets that should be updated. Means while using setState() in StateFulWidget, only those components will be rebuild that are non const constructor.
+
+```dart
+class _MyWidgetState extends State<MyWidget> {
+
+  String title = "Title";
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(title),
+      ),
+      body: Column(
+        children: <Widget>[
+          const Text("Text 1"),
+          const Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: const Text("Another Text widget"),
+          ),
+          const Text("Text 3"),
+        ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          setState(() => title = 'New Title');
+        },
+      ),
+    );
+  }
+}
+
+```
+
+
 
 
 
